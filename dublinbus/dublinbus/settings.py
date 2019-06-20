@@ -25,7 +25,7 @@ SECRET_KEY = 'p6ts$b^0u56x^f=fhj3l2s0+yn1br394_1_ldl4gl@pi(ana9x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['137,43.49.53']
+ALLOWED_HOSTS = ['137,43.49.53', '0.0.0.0']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'dublinbus.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['map/templates/map'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
