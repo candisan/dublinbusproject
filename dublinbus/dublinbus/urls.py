@@ -20,4 +20,8 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('map/', include('map.urls')),
+    path('favourites/', include('favourites.urls')),
+    path('more/', include('more.urls')),
+    path('routes/', include('routes.urls')),
+    path('journeyplan/', include('journeyplan.urls')),
 ]
